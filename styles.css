@@ -695,6 +695,17 @@ footer {
   margin: 0;
   letter-spacing: 0.02em;
 }
+.footer-nav {
+  display: flex;
+  gap: 28px;
+}
+.footer-nav a {
+  color: var(--gold);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: opacity 0.15s;
+}
+.footer-nav a:hover { opacity: 0.7; }
 .footer-whatsapp {
   display: inline-flex;
   align-items: center;
