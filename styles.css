@@ -127,6 +127,14 @@ nav {
   font-weight: 800;
   color: var(--gold);
   letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav-logo-img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
 }
 .nav-links {
   display: flex;
