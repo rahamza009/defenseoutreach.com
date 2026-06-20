@@ -149,11 +149,11 @@ nav {
   list-style: none;
 }
 .nav-links a {
-  color: var(--secondary);
+  color: var(--gold);
   font-weight: 500;
   transition: color 0.15s;
 }
-.nav-links a:hover { color: var(--gold); }
+.nav-links a:hover { opacity: 0.75; }
 .nav-cta { margin-left: 24px; }
 
 /* hamburger */
@@ -195,14 +195,14 @@ nav {
   padding: 16px 24px 24px;
 }
 .mobile-menu a {
-  color: var(--secondary);
+  color: var(--gold);
   font-weight: 500;
   padding: 12px 0;
   border-bottom: 1px solid var(--divider);
-  transition: color 0.15s;
+  transition: opacity 0.15s;
 }
 .mobile-menu a:last-child { border-bottom: none; }
-.mobile-menu a:hover { color: var(--gold); }
+.mobile-menu a:hover { opacity: 0.75; }
 
 /* ── HERO ── */
 .hero {
