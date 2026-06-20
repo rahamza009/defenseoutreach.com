@@ -42,14 +42,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-/* ── Beehiiv newsletter form ──
-   Replace the two constants below with your real values.
-   PUBLICATION_ID: found in your Beehiiv dashboard URL (pub_xxxxxxxx)
-   API_KEY:        Settings → API → Generate key
-   ──────────────────────────────────────────────────────── */
-const BEEHIIV_PUBLICATION_ID = 'PUBLICATION_ID';   // ← replace
-const BEEHIIV_API_KEY         = 'YOUR_API_KEY';     // ← replace
-
+/* ── Newsletter form — proxied through /api/subscribe (keeps API key server-side) ── */
 const signupForm = document.getElementById('signup-form');
 const formMessage = document.getElementById('form-message');
 
@@ -69,22 +62,11 @@ if (signupForm) {
     formMessage.textContent = '';
 
     try {
-      const res = await fetch(
-        `https://api.beehiiv.com/v2/publications/${BEEHIIV_PUBLICATION_ID}/subscriptions`,
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${BEEHIIV_API_KEY}`,
-          },
-          body: JSON.stringify({
-            email,
-            name,
-            reactivate_existing: true,
-            send_welcome_email: true,
-          }),
-        }
-      );
+      const res = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email }),
+      });
 
       if (res.ok) {
         formMessage.className = 'form-message success';
@@ -97,7 +79,7 @@ if (signupForm) {
     } catch (err) {
       formMessage.className = 'form-message error';
       formMessage.textContent = 'Something went wrong. Please try again or reach out on LinkedIn.';
-      console.error('Beehiiv error:', err);
+      console.error('Subscribe error:', err);
     } finally {
       btn.disabled = false;
       btn.textContent = 'Subscribe to Tidings';
