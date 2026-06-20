@@ -1,0 +1,22 @@
+{
+  "name": "defenseoutreach-com",
+  "version": "1.0.0",
+  "description": "Defense Outreach - Right Message. Right Person. Right Time.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Static site - no build needed'",
+    "lint": "echo 'No linter configured'"
+  },
+  "keywords": [
+    "defense",
+    "aerospace",
+    "communications"
+  ],
+  "author": "Defense Outreach",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
