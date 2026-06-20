@@ -676,6 +676,16 @@ footer {
   margin: 0;
   letter-spacing: 0.02em;
 }
+.footer-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: rgba(168,155,191,0.7);
+  font-size: 0.85rem;
+  transition: color 0.15s;
+}
+.footer-whatsapp:hover { color: #25d366; }
+.footer-whatsapp svg { width: 15px; height: 15px; fill: currentColor; }
 .footer-copy {
   color: rgba(168,155,191,0.5);
   font-size: 0.82rem;
