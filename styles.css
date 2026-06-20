@@ -653,8 +653,16 @@ input[type="email"]:focus {
 
 /* ── FOOTER ── */
 footer {
-  border-top: 1px solid var(--divider);
+  border-top: none;
   padding: 56px 0 40px;
+  position: relative;
+}
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, rgba(245,193,36,0.6) 30%, var(--gold) 50%, rgba(245,193,36,0.6) 70%, transparent 100%);
 }
 .footer-inner {
   display: flex;
