@@ -636,15 +636,19 @@ input[type="email"]:focus {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 10px 20px;
-  border: 1px solid var(--card-border);
+  padding: 10px 22px;
+  border: 1px solid rgba(245, 193, 36, 0.45);
   border-radius: 6px;
-  color: var(--secondary);
+  color: var(--gold);
   font-size: 0.9rem;
-  font-weight: 500;
-  transition: border-color 0.2s, color 0.2s;
+  font-weight: 600;
+  transition: background 0.2s, border-color 0.2s, transform 0.15s;
 }
-.social-link:hover { border-color: var(--gold); color: var(--gold); }
+.social-link:hover {
+  background: rgba(245, 193, 36, 0.08);
+  border-color: var(--gold);
+  transform: translateY(-2px);
+}
 .social-link svg { width: 18px; height: 18px; fill: currentColor; }
 
 /* ── FOOTER ── */
