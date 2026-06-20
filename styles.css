@@ -670,6 +670,12 @@ footer {
 }
 .footer-links a:hover { color: var(--gold); }
 .footer-links a svg { width: 16px; height: 16px; fill: currentColor; }
+.footer-address {
+  color: rgba(168,155,191,0.6);
+  font-size: 0.85rem;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
 .footer-copy {
   color: rgba(168,155,191,0.5);
   font-size: 0.82rem;
