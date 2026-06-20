@@ -261,8 +261,8 @@ nav {
 
 /* ── TIDINGS OFFER ── */
 .brand-name {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-style: italic;
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-style: italic !important;
   font-weight: 700;
   color: var(--gold);
 }
