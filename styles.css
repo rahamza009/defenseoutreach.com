@@ -1091,8 +1091,10 @@ footer::before {
   padding: 28px 32px 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   position: relative;
   box-sizing: border-box;
+  text-align: center;
 }
 .td-scene-caption {
   margin-top: auto;
