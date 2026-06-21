@@ -1114,7 +1114,8 @@ footer::before {
   gap: 10px;
 }
 .td-btn-play {
-  align-self: center;
+  display: block;
+  margin: 0 auto;
   background: var(--gold);
   color: var(--btn-text);
   border: none;
@@ -1147,6 +1148,8 @@ footer::before {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
 .td-step-label {
   font-size: 0.72rem;
@@ -1171,7 +1174,7 @@ footer::before {
 
 .td-browser {
   width: 100%;
-  max-width: 480px;
+  max-width: 460px;
   margin: 0 auto;
   background: #1a0a2e;
   border: 1px solid var(--divider);
@@ -1350,7 +1353,9 @@ footer::before {
   border: 1px solid var(--card-border);
   border-radius: 8px;
   overflow: hidden;
-  margin-bottom: 12px;
+  margin: 0 auto 12px;
+  width: 100%;
+  max-width: 520px;
 }
 .td-email-toolbar {
   display: flex;
@@ -1436,7 +1441,6 @@ footer::before {
   padding: 4px 12px;
   border-radius: 4px;
   margin-bottom: 12px;
-  align-self: flex-start;
 }
 .td-urgent--pulse { animation: td-pulse 1s ease infinite; }
 @keyframes td-pulse {
@@ -1448,6 +1452,9 @@ footer::before {
   border: 1px solid var(--card-border);
   border-radius: 8px;
   overflow: hidden;
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
 }
 .td-direct-header {
   padding: 10px 14px;
@@ -1487,6 +1494,9 @@ footer::before {
   border: 1px solid var(--card-border);
   border-radius: 8px;
   overflow: hidden;
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
 }
 .td-dash-header {
   display: flex;
