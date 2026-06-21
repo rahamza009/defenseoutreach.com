@@ -972,6 +972,67 @@ footer::before {
   text-align: right;
 }
 
+/* ── IDEAS 2024 Photo Strip ── */
+.ideas-strip-section {
+  padding: 80px 0 0;
+  overflow: hidden;
+}
+.ideas-strip-section .section-sub {
+  margin-bottom: 52px;
+}
+.ideas-scroll-wrap {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-snap-type: x mandatory;
+  cursor: grab;
+}
+.ideas-scroll-wrap::-webkit-scrollbar { display: none; }
+.ideas-scroll-wrap:active { cursor: grabbing; }
+.ideas-strip {
+  display: flex;
+  gap: 4px;
+  width: max-content;
+}
+.ideas-photo {
+  flex-shrink: 0;
+  width: 272px;
+  height: 380px;
+  overflow: hidden;
+  scroll-snap-align: start;
+  position: relative;
+}
+.ideas-photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 55%, rgba(6,13,27,0.45) 100%);
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+.ideas-photo:hover::after { opacity: 0; }
+.ideas-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform 0.5s ease, filter 0.35s ease;
+  filter: brightness(0.88) contrast(1.08) saturate(1.05);
+}
+.ideas-photo:hover img {
+  transform: scale(1.05);
+  filter: brightness(1) contrast(1.08) saturate(1.1);
+}
+.ideas-photo:hover {
+  box-shadow: inset 0 0 0 2px rgba(245,193,36,0.55);
+}
+@media (max-width: 768px) {
+  .ideas-strip-section { padding: 64px 0 0; }
+  .ideas-photo { width: 220px; height: 310px; }
+}
+
 /* ── Card improvements ── */
 .problem-card, .deliverable-card {
   box-shadow: 0 4px 32px rgba(0, 0, 0, 0.3);
