@@ -247,49 +247,49 @@
       <div class="td-scene-inner td-network-scene">
         <svg class="td-network-svg" viewBox="0 0 500 320" xmlns="http://www.w3.org/2000/svg">
           <!-- Connection lines -->
-          <line class="td-net-line" x1="250" y1="160" x2="130" y2="80"  stroke="#f5c124" stroke-width="1.5" stroke-dasharray="4 3" opacity="0"/>
-          <line class="td-net-line" x1="250" y1="160" x2="370" y2="80"  stroke="#6ee7b7" stroke-width="1.5" stroke-dasharray="4 3" opacity="0"/>
-          <line class="td-net-line" x1="250" y1="160" x2="100" y2="230" stroke="#93c5fd" stroke-width="1.5" stroke-dasharray="4 3" opacity="0"/>
-          <line class="td-net-line" x1="250" y1="160" x2="400" y2="230" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="4 3" opacity="0"/>
-          <line class="td-net-line" x1="250" y1="160" x2="250" y2="295" stroke="#d1d5db" stroke-width="1.5" stroke-dasharray="4 3" opacity="0"/>
+          <line class="td-net-line" x1="250" y1="160" x2="130" y2="80"  stroke="#f5c124" stroke-width="1.5" stroke-dasharray="5 4" opacity="0"/>
+          <line class="td-net-line" x1="250" y1="160" x2="370" y2="80"  stroke="#6ee7b7" stroke-width="1.5" stroke-dasharray="5 4" opacity="0"/>
+          <line class="td-net-line" x1="250" y1="160" x2="100" y2="240" stroke="#93c5fd" stroke-width="1.5" stroke-dasharray="5 4" opacity="0"/>
+          <line class="td-net-line" x1="250" y1="160" x2="400" y2="240" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="5 4" opacity="0"/>
+          <line class="td-net-line" x1="250" y1="160" x2="250" y2="295" stroke="#d1d5db" stroke-width="1.5" stroke-dasharray="5 4" opacity="0"/>
           <!-- Center node -->
-          <circle cx="250" cy="160" r="36" fill="#220d38" stroke="#f5c124" stroke-width="2"/>
-          <text x="250" y="155" text-anchor="middle" fill="#f5c124" font-size="9" font-weight="700" font-family="Inter,sans-serif">Defense</text>
-          <text x="250" y="168" text-anchor="middle" fill="#f5c124" font-size="9" font-weight="700" font-family="Inter,sans-serif">Outreach</text>
+          <circle cx="250" cy="160" r="40" fill="#220d38" stroke="#f5c124" stroke-width="2.5"/>
+          <text x="250" y="154" text-anchor="middle" fill="#f5c124" font-size="13" font-weight="700" font-family="Inter,sans-serif">Defense</text>
+          <text x="250" y="171" text-anchor="middle" fill="#f5c124" font-size="13" font-weight="700" font-family="Inter,sans-serif">Outreach</text>
           <!-- Satellite nodes -->
           <g class="td-net-node" opacity="0">
-            <circle cx="130" cy="80" r="28" fill="#220d38" stroke="#f5c124" stroke-width="1.5"/>
-            <text x="130" y="76" text-anchor="middle" fill="#f5c124" font-size="8" font-family="Inter,sans-serif">Industry</text>
-            <text x="130" y="88" text-anchor="middle" fill="#f5c124" font-size="8" font-family="Inter,sans-serif">Partners</text>
+            <circle cx="130" cy="80" r="32" fill="#220d38" stroke="#f5c124" stroke-width="1.5"/>
+            <text x="130" y="75" text-anchor="middle" fill="#f5c124" font-size="11" font-weight="600" font-family="Inter,sans-serif">Industry</text>
+            <text x="130" y="91" text-anchor="middle" fill="#f5c124" font-size="10" font-family="Inter,sans-serif">Partners</text>
           </g>
           <g class="td-net-node" opacity="0">
-            <circle cx="370" cy="80" r="28" fill="#220d38" stroke="#6ee7b7" stroke-width="1.5"/>
-            <text x="370" y="76" text-anchor="middle" fill="#6ee7b7" font-size="8" font-family="Inter,sans-serif">Vendors</text>
-            <text x="370" y="88" text-anchor="middle" fill="#6ee7b7" font-size="8" font-family="Inter,sans-serif">247 contacts</text>
+            <circle cx="370" cy="80" r="32" fill="#220d38" stroke="#6ee7b7" stroke-width="1.5"/>
+            <text x="370" y="75" text-anchor="middle" fill="#6ee7b7" font-size="11" font-weight="600" font-family="Inter,sans-serif">Vendors</text>
+            <text x="370" y="91" text-anchor="middle" fill="#6ee7b7" font-size="10" font-family="Inter,sans-serif">247 contacts</text>
           </g>
           <g class="td-net-node" opacity="0">
-            <circle cx="100" cy="230" r="28" fill="#220d38" stroke="#93c5fd" stroke-width="1.5"/>
-            <text x="100" y="226" text-anchor="middle" fill="#93c5fd" font-size="8" font-family="Inter,sans-serif">Suppliers</text>
-            <text x="100" y="238" text-anchor="middle" fill="#93c5fd" font-size="8" font-family="Inter,sans-serif">312 contacts</text>
+            <circle cx="100" cy="240" r="32" fill="#220d38" stroke="#93c5fd" stroke-width="1.5"/>
+            <text x="100" y="235" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="600" font-family="Inter,sans-serif">Suppliers</text>
+            <text x="100" y="251" text-anchor="middle" fill="#93c5fd" font-size="10" font-family="Inter,sans-serif">312 contacts</text>
           </g>
           <g class="td-net-node" opacity="0">
-            <circle cx="400" cy="230" r="28" fill="#220d38" stroke="#a78bfa" stroke-width="1.5"/>
-            <text x="400" y="226" text-anchor="middle" fill="#a78bfa" font-size="8" font-family="Inter,sans-serif">Customers</text>
-            <text x="400" y="238" text-anchor="middle" fill="#a78bfa" font-size="8" font-family="Inter,sans-serif">199 contacts</text>
+            <circle cx="400" cy="240" r="32" fill="#220d38" stroke="#a78bfa" stroke-width="1.5"/>
+            <text x="400" y="235" text-anchor="middle" fill="#a78bfa" font-size="11" font-weight="600" font-family="Inter,sans-serif">Customers</text>
+            <text x="400" y="251" text-anchor="middle" fill="#a78bfa" font-size="10" font-family="Inter,sans-serif">199 contacts</text>
           </g>
           <g class="td-net-node" opacity="0">
-            <circle cx="250" cy="295" r="28" fill="#220d38" stroke="#d1d5db" stroke-width="1.5"/>
-            <text x="250" y="291" text-anchor="middle" fill="#d1d5db" font-size="8" font-family="Inter,sans-serif">Public</text>
-            <text x="250" y="303" text-anchor="middle" fill="#d1d5db" font-size="8" font-family="Inter,sans-serif">299 contacts</text>
+            <circle cx="250" cy="295" r="32" fill="#220d38" stroke="#d1d5db" stroke-width="1.5"/>
+            <text x="250" y="290" text-anchor="middle" fill="#d1d5db" font-size="11" font-weight="600" font-family="Inter,sans-serif">Public</text>
+            <text x="250" y="306" text-anchor="middle" fill="#d1d5db" font-size="10" font-family="Inter,sans-serif">299 contacts</text>
           </g>
           <!-- Touchpoint badges -->
           <g class="td-net-badge" opacity="0">
-            <rect x="162" y="100" width="68" height="18" rx="9" fill="#f5c12420" stroke="#f5c12440"/>
-            <text x="196" y="113" text-anchor="middle" fill="#f5c124" font-size="7.5" font-family="Inter,sans-serif">12 mo · 24 sends</text>
+            <rect x="155" y="108" width="78" height="20" rx="10" fill="#f5c12420" stroke="#f5c12440"/>
+            <text x="194" y="122" text-anchor="middle" fill="#f5c124" font-size="9.5" font-family="Inter,sans-serif">12 mo · 24 sends</text>
           </g>
           <g class="td-net-badge" opacity="0">
-            <rect x="295" y="100" width="60" height="18" rx="9" fill="#6ee7b720" stroke="#6ee7b740"/>
-            <text x="325" y="113" text-anchor="middle" fill="#6ee7b7" font-size="7.5" font-family="Inter,sans-serif">8 mo · 16 sends</text>
+            <rect x="290" y="108" width="70" height="20" rx="10" fill="#6ee7b720" stroke="#6ee7b740"/>
+            <text x="325" y="122" text-anchor="middle" fill="#6ee7b7" font-size="9.5" font-family="Inter,sans-serif">8 mo · 16 sends</text>
           </g>
         </svg>
         <div class="td-network-stat">
@@ -314,7 +314,7 @@
           </div>
           <a href="https://www.linkedin.com/in/rahamza009/" target="_blank" rel="noopener"
              class="td-end-cta" id="td-end-cta">
-            Start Today — DM on LinkedIn
+            Talk to the CEO
           </a>
         </div>
       </div>`;
