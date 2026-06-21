@@ -156,6 +156,62 @@ nav {
 .nav-links a:hover { opacity: 0.75; }
 .nav-cta { margin-left: 24px; }
 
+/* ── CEO hover popup ── */
+.nav-ceo-wrap {
+  position: relative;
+  margin-left: 24px;
+}
+.nav-ceo-wrap .nav-cta { margin-left: 0; }
+.ceo-popup {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) translateY(6px) scale(0.95);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  background: rgba(6, 13, 27, 0.92);
+  border: 1px solid rgba(245, 193, 36, 0.35);
+  border-radius: 10px;
+  padding: 10px 14px;
+  white-space: nowrap;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  z-index: 200;
+}
+.ceo-popup::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: rgba(245, 193, 36, 0.35);
+}
+.ceo-popup img {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  border: 2px solid var(--gold);
+}
+.ceo-popup span {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+}
+.nav-ceo-wrap:hover .ceo-popup {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0) scale(1);
+}
+
 /* hamburger */
 .hamburger {
   display: none;
