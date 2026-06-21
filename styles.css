@@ -164,9 +164,9 @@ nav {
 .nav-ceo-wrap .nav-cta { margin-left: 0; }
 .ceo-popup {
   position: absolute;
-  bottom: calc(100% + 10px);
+  top: calc(100% + 10px);
   left: 50%;
-  transform: translateX(-50%) translateY(6px) scale(0.95);
+  transform: translateX(-50%) translateY(-6px) scale(0.95);
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s ease, transform 0.2s ease;
@@ -187,11 +187,11 @@ nav {
 .ceo-popup::after {
   content: '';
   position: absolute;
-  top: 100%;
+  bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
   border: 5px solid transparent;
-  border-top-color: rgba(245, 193, 36, 0.35);
+  border-bottom-color: rgba(245, 193, 36, 0.35);
 }
 .ceo-popup img {
   width: 52px;
@@ -211,6 +211,7 @@ nav {
   opacity: 1;
   transform: translateX(-50%) translateY(0) scale(1);
 }
+@media (max-width: 768px) { .nav-ceo-wrap { display: none; } }
 
 /* hamburger */
 .hamburger {
