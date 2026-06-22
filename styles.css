@@ -975,7 +975,7 @@ footer::before {
 /* ── IDEAS 2024 Photo Strip ── */
 .ideas-strip-section {
   padding: 80px 0 80px;
-  overflow: visible;
+  overflow: hidden;
 }
 .ideas-strip-section .section-sub {
   margin-bottom: 52px;
@@ -984,6 +984,7 @@ footer::before {
   position: relative;
 }
 .ideas-scroll-wrap {
+  width: 100%;
   overflow-x: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
