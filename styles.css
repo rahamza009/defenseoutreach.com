@@ -263,11 +263,11 @@ nav {
 
 /* ── HERO ── */
 .hero {
-  padding: 120px 0 96px;
+  padding: 68px 0 60px;
   border-top: none;
 }
 .hero-inner {
-  max-width: 780px;
+  max-width: 960px;
   margin: 0 auto;
   text-align: center;
 }
@@ -281,19 +281,19 @@ nav {
   border: 1px solid var(--divider);
   padding: 6px 14px;
   border-radius: 4px;
-  margin-bottom: 28px;
+  margin-bottom: 18px;
 }
-.hero h1 { margin-bottom: 32px; }
+.hero h1 { margin-bottom: 20px; }
 .hero .subheadline {
   font-size: clamp(1rem, 1.8vw, 1.15rem);
   color: var(--secondary);
-  max-width: 640px;
+  max-width: 860px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 .hero .subheadline-cta {
-  margin-bottom: 48px;
+  margin-bottom: 30px;
   color: var(--body-text);
   font-weight: 500;
 }
@@ -818,7 +818,7 @@ footer::before {
 @media (max-width: 768px) {
   .container { padding: 0 24px; }
   section { padding: 64px 0; }
-  .hero { padding: 80px 0 64px; }
+  .hero { padding: 52px 0 48px; }
   .nav-links, .nav-cta { display: none; }
   .hamburger { display: flex; }
 
