@@ -31,7 +31,7 @@ body {
     linear-gradient(90deg, rgba(148, 163, 184, 0.03) 1px, transparent 1px);
   background-size: auto, auto, 64px 64px, 64px 64px;
   color: var(--body-text);
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
 }
@@ -54,7 +54,7 @@ p:last-child { margin-bottom: 0; }
 
 /* ── Layout helpers ── */
 .container {
-  max-width: 1100px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 48px;
 }
@@ -125,8 +125,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 24px;
-  max-width: 1100px;
+  padding: 18px 48px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 .nav-logo {
@@ -974,19 +974,22 @@ footer::before {
 
 /* ── IDEAS 2024 Photo Strip ── */
 .ideas-strip-section {
-  padding: 80px 0 0;
-  overflow: hidden;
+  padding: 80px 0 80px;
+  overflow: visible;
 }
 .ideas-strip-section .section-sub {
   margin-bottom: 52px;
 }
+.ideas-slider-wrap {
+  position: relative;
+}
 .ideas-scroll-wrap {
-  width: 100%;
   overflow-x: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
   scroll-snap-type: x mandatory;
   cursor: grab;
+  border-radius: 8px;
 }
 .ideas-scroll-wrap::-webkit-scrollbar { display: none; }
 .ideas-scroll-wrap:active { cursor: grabbing; }
@@ -995,6 +998,33 @@ footer::before {
   gap: 4px;
   width: max-content;
 }
+/* Slider arrow buttons */
+.ideas-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(6,13,27,0.85);
+  border: 1px solid rgba(245,193,36,0.35);
+  color: var(--gold);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, border-color 0.2s;
+  z-index: 10;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+.ideas-arrow:hover {
+  background: rgba(245,193,36,0.15);
+  border-color: var(--gold);
+}
+.ideas-arrow-prev { left: -22px; }
+.ideas-arrow-next { right: -22px; }
 .ideas-photo {
   flex-shrink: 0;
   width: 244px;

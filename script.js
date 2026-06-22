@@ -95,6 +95,21 @@ const segObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.4 });
 document.querySelectorAll('.segment-visual').forEach(el => segObserver.observe(el));
 
+/* ── IDEAS photo slider ── */
+const ideasScroll = document.getElementById('ideasScroll');
+const ideasPrev   = document.querySelector('.ideas-arrow-prev');
+const ideasNext   = document.querySelector('.ideas-arrow-next');
+
+if (ideasScroll && ideasPrev && ideasNext) {
+  const scrollAmount = 500;
+  ideasPrev.addEventListener('click', () => {
+    ideasScroll.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  });
+  ideasNext.addEventListener('click', () => {
+    ideasScroll.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  });
+}
+
 /* ── Newsletter form — proxied through /api/subscribe (keeps API key server-side) ── */
 const signupForm = document.getElementById('signup-form');
 const formMessage = document.getElementById('form-message');
